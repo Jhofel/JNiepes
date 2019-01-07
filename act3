@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grades secret</title>
+	<link rel="stylesheet" type="text/css" href="act3.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"		>
+</head>
+<body>
+
+<label>Enter Grade:</label>
+<input type="text" id="grd">
+<input type="button" value="GO!" onclick="displayy()">
+<h4>Grade Result:</h4>
+<h3 id="result"></h3>
+
+	<script>
+		function displayy()
+		{
+			var grd=Number(document.getElementById('grd').value);	
+			
+			if(isNaN('grd')==false)
+			var bracket=""
+		{
+
+			if(grd>94)
+			{
+				document.getElementById('result').innerHTML="Excellence";
+			}
+			else if(grd>84)
+			{
+				document.getElementById('result').innerHTML="Very Good";
+			}
+			else if(grd>79)
+			{
+				document.getElementById('result').innerHTML="Good";
+			}
+			else if(grd>74)
+			{
+				document.getElementById('result').innerHTML="Average";
+			}
+			else if(grd<75)
+			{
+				document.getElementById('result').innerHTML="Poor";
+			}
+			else
+			{
+				document.getElementById('result').innerHTML="INVALID VALUE";
+			}
+		}
+	}
+
+	</script>
+
+</body>
+</html>
